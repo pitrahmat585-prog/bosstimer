@@ -1,0 +1,40 @@
+{
+  "name": "boss-timer-archi",
+  "version": "1.0.0",
+  "description": "Discord Boss Timer Bot with Hybrid Cooldown & Fixed Schedule, Live Countdown Board, Interactive Components, and Auto-Reminders",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "deploy": "tsx src/discord/deployCommands.ts",
+    "test": "tsx --test tests/*.test.ts"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "boss-timer",
+    "mmorpg",
+    "typescript",
+    "sqlite"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^11.8.1",
+    "discord.js": "^14.18.0",
+    "dotenv": "^16.4.7",
+    "luxon": "^3.5.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/luxon": "^3.4.2",
+    "@types/node": "^22.13.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
